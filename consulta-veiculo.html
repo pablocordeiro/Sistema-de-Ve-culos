@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="PT-br">
 	<head>
+		<meta charset="utf-8">
+
+
 		<title></title>
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	</head>
 	<body>
-
-
-
-		<nav class="navbar navbar-inverse navbar-static-top"> <!-- navbar-inverse: deixa preta -->
+		<nav class="navbar navbar-inverse navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
@@ -21,11 +21,11 @@
 						<img src="img/controleveiculos.png" alt="Controle de Veiculos">
 					</a>
 				</div>
-				<div class="collapse navbar-collapse" id="menu"> <!-- collapse: navbar fica reduzida, navbar-collapse: mostra os itens da navbar caso esteja em resolução maior -->
-					<ul class="nav navbar-nav"> <!-- navbar-nav: estilo de nav em linha -->
+				<div class="collapse navbar-collapse" id="menu"> >
+					<ul class="nav navbar-nav"> 
 						<li><a href="">Movimentação</a></li>
 						<li><a href="">Funcionários</a></li>
-						<li><a href="consulta-veiculos.html">Veículos</a></li>
+						<li><a href="consulta-veiculo.html">Veículos</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
@@ -51,33 +51,8 @@
 			</div>
 		</nav>		
 
-		<main class="layout-assinatura">
-			<div class="container">
-				<form action="#" method="post">
-
-					<div class="row">
-						<div class="form-group">						
-							<label for="descricao">Descrição</label>
-							<input type="text" class="form-control" id="descricao" name="descricao" required>
-						</div>
-					</div>
-					<div class="row">
-						<div class="form-group">						
-							<label for="placa">Placa</label>
-							<input type="text" class="form-control" id="placa" name="placa" required>
-						</div>
-					</div>
-
-					<div style="text-align: center; margin-top: 40px">						
-						<input class="btn primary" type="submit" value="Salvar">
-					</div>
-
-				</form>
-			</div>
-		</main>
-
 
 		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script> 		
+		<script src="js/bootstrap.min.js"></script>	
 	</body>
 </html>
