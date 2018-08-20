@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+	<head>
+		<meta charset="utf-8">
+
+
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-static-top"> <!-- navbar-inverse: deixa preta -->
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand logotipo">
+						<img src="img/controleveiculos.png" alt="Controle de Veiculos">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="menu"> <!-- collapse: navbar fica reduzida, navbar-collapse: mostra os itens da navbar caso esteja em resolução maior -->
+					<ul class="nav navbar-nav"> <!-- navbar-nav: estilo de nav em linha -->
+						<li><a href="">Movimentação</a></li>
+						<li><a href="">Funcionários</a></li>
+						<li><a href="veiculos.html">Veículos</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">
+								Minha Conta
+								<span class="caret"></span> <!-- Seta para baixo -->
+							</a>
+							<div class="dropdown-menu perfil">
+
+								<div class="col-sm-4 hidden-xs">
+									<img class="img-responsive img-rounded" src="https://api.adorable.io/avatars/100/controleveiculos.png">									
+								</div>
+
+								<ul class="list-unstyled col-sm-8">
+									<li>Fulano de Tal</li>
+									<li><a href="">Alterar Perfil</a></li>
+									<li><a href="">Sair</a></li>
+								</ul>
+							</div>
+						</li>					
+					</ul>
+				</div>
+			</div>
+		</nav>		
+
+
+
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
