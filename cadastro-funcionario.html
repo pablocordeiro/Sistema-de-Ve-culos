@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html  lang="PT-br">
+<html lang="PT-br">
 	<head>
 		<meta charset="utf-8">
 		<title></title>
 
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
 		<link rel="stylesheet" type="text/css" href="css/layout.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-inverse navbar-static-top"> <!-- navbar-inverse: deixa preta -->
+		<nav class="navbar navbar-inverse navbar-static-top">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
@@ -20,8 +21,8 @@
 						<img src="img/controleveiculos.png" alt="Controle de Veiculos">
 					</a>
 				</div>
-				<div class="collapse navbar-collapse" id="menu"> <!-- collapse: navbar fica reduzida, navbar-collapse: mostra os itens da navbar caso esteja em resolução maior -->
-					<ul class="nav navbar-nav"> <!-- navbar-nav: estilo de nav em linha -->
+				<div class="collapse navbar-collapse" id="menu"> >
+					<ul class="nav navbar-nav"> 
 						<li><a href="">Movimentação</a></li>
 						<li><a href="consulta-funcionario.html">Funcionários</a></li>
 						<li><a href="consulta-veiculo.html">Veículos</a></li>
@@ -48,35 +49,47 @@
 					</ul>
 				</div>
 			</div>
-		</nav>		
+		</nav>
+
 
 		<div class="container">
-			<form action="#" method="post">
+			<form>
+				<div class="row">
+					<div class="form-group col-sm-12">
+						<label for="nome">Nome</label>
+						<input type="text" id="nome" name="nome" class="form-control" required>
+					</div>					
+				</div>
 
 				<div class="row">
-					<div class="form-group col-sm-12">						
-						<label for="descricao">Descrição</label>
-						<input type="text" class="form-control" id="descricao" name="descricao" required>
-					</div>
+					<div class="form-group col-sm-8 col-xs-12">
+						<label for="cnh">CNH</label>
+						<input type="text" id="cnh" name="cnh" class="form-control" required>
+					</div>					
+
+
+					<div class="form-group col-sm-4 col-xs-12">
+						<label for="validade">Validade</label>
+						<div class="input-group date  datepicker" data-provide="datepicker">
+	  						<input type="text" id="validade" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+						</div>
+<!--						
+						<label for="validade">Validade</label>
+						<input type="date" id="validade" name="validade" class="form-control" required> -->
+					</div>					
 				</div>
 
-				<div class="row">
-					<div class="form-group  col-md-2  col-sm-4  col-xs-12">
-						<label for="placa">Placa</label>
-						<input type="text" class="form-control" id="placa" name="placa" required>
-					</div>
+				<div>
+					<input class="btn  btn-primary" type="submit" name="salvar" value="Salvar">
+					<a class="btn  btn-default" href="consulta-funcionario.html">Cancelar</a>
 				</div>
-
-				<div>						
-					<input class="btn btn-primary" type="submit" name="salvar" value="Salvar">
-					<a class="btn btn-default" href="consulta-veiculo.html">Cancelar</a>
-				</div>
-
 			</form>
-		</div>
-
+		</div>		
 
 		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script> 		
+		<script src="js/bootstrap.min.js"></script>	
+		<script src="js/bootstrap-datepicker.min.js"></script>	
+		<script src="js/bootstrap-datepicker.pt-BR.min.js"></script>	
+		<script src="js/main.js"></script>
 	</body>
 </html>
